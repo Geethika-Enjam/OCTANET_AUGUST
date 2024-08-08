@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness World</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: grey;
+            color: white;
+        }
+        nav {
+            background-color: #333;
+            color: red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav img {
+            height: 60px;
+        }
+        nav a {
+            color: pink;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        header {
+            position: relative;
+            height: 500px;
+            text-align: center;
+            color: white;
+            margin-top: 80px; /* Add margin to push down the header content */
+        }
+        header::before {
+            content: "";
+            background: url('fit.jpeg') no-repeat center center/cover;
+            filter: blur(3px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        header h1 {
+            margin-top: 0;
+            padding-top: 100px;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.5em;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section-image {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .about, .contact {
+            background-color: #333;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about h2, .contact h2 {
+            margin-top: 0;
+        }
+        .subsection {
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .subsection h3 {
+            margin-top: 20px;
+        }
+        .subsection img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="logos.jpeg" alt="Fitness Hub Logo">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#workouts">Workouts</a>
+            <a href="#nutrition">Nutrition</a>
+            <a href="#blog">Blog</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <header id="home">
+        <h1>Welcome to Fitness World</h1>
+        <p>Your ultimate guide to fitness and wellness</p>
+        <img src="logo.png" alt="Fitness Hub Logo">
+    </header>
+
+    <section id="workouts">
+        <h2>Workouts</h2>
+        <img src="work.JPEG" alt="Workout Plans" class="section-image">
+        <p>Discover the best workout plans for all fitness levels.</p>
+        <div class="subsection">
+            <img src="strength.jpeg" alt="Strength Training" class="section-image">
+            <h2>Strength Training</h2>
+            <p>Build muscle and strength with our comprehensive strength training plans.</p>
+        </div>
+        <div class="subsection">
+            <img src="cardio.jpeg" alt="Cardio Workouts" class="section-image">
+            <h3>Cardio Workouts</h3>
+            <p>Improve your cardiovascular health with our cardio routines.</p>
+        </div>
+        <div class="subsection">
+            <img src="yoga.jpeg" alt="Yoga" class="section-image">
+            <h3>Yoga</h3>
+            <p>Enhance your flexibility and peace of mind with our yoga sessions.</p>
+        </div>
+    </section>
+
+    <section id="nutrition">
+        <h2>Nutrition</h2>
+        <img src="nutrition.jpeg" alt="Nutrition" class="section-image">
+        <p>Learn about the best nutrition plans to complement your workouts.</p>
+        <div class="subsection">
+            <img src="healthy.jpeg" alt="Healthy Recipes" class="section-image">
+            <h3>Healthy Recipes</h3>
+            <p>Explore our collection of delicious and healthy recipes.</p>
+        </div>
+        <div class="subsection">
+            <img src="meal.jpeg" alt="Meal Plans" class="section-image">
+            <h3>Meal Plans</h3>
+            <p>Follow our tailored meal plans to achieve your fitness goals.</p>
+        </div>
+        <div class="subsection">
+            <img src="suplement.jpeg" alt="Supplements" class="section-image">
+            <h3>Supplements</h3>
+            <p>Discover the best supplements to support your fitness journey.</p>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <img src="blog.jpeg" alt="Blog" class="section-image">
+        <p>Stay updated with our latest articles on fitness and wellness.</p>
+        <div class="subsection">
+            <img src="fitness.jpeg" alt="Fitness Tips" class="section-image">
+            <h3>Fitness Tips</h3>
+            <p>Get expert tips to improve your fitness routine.</p>
+        </div>
+        <div class="subsection">
+            <img src="success.jpeg" alt="Success Stories" class="section-image">
+            <h3>Success Stories</h3>
+            <p>Be inspired by the success stories of our community members.</p>
+        </div>
+        <div class="subsection">
+            <img src="well.jpeg" alt="Wellness Advice" class="section-image">
+            <h3>Wellness Advice</h3>
+            <p>Learn how to maintain a balanced and healthy lifestyle.</p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We are a team of fitness enthusiasts committed to helping you achieve your fitness goals.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out with your questions or feedback.</p>
+        <p>Email: info@fitnessworld.com</p>
+        <p>Phone: 9876543210</p>
+    </section>
+
+</body>
+</html>
